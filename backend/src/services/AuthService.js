@@ -26,7 +26,7 @@ class AuthService {
     const isAdmin = userWithAdminInfo?.admin || false;
     await Admin.isAdminMiddleware(isAdmin);
 
-    const token = this.generateJwtToken(userId, 30000);
+    const token = this.generateJwtToken(userId, 300000);
 
     return { token, userId };
   }

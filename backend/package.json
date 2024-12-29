@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon src/server.js"
+    "dev:server": "nodemon src/server.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +27,8 @@
     "socket.io": "^4.7.4",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
